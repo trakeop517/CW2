@@ -687,4 +687,275 @@ h2{
     width: 117px;
     height: auto;
     z-index: 5;
+
+/* блок 4 */
+.otz{
+    margin-top: 150px;
+}
+.otz body {
+    font-family: 'gilroy-light',sans-serif;
+    font-size: 16px;
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 0 20px;
+    background-color: #000000;
+    color: #ffffff;
+    position: relative;
+}
+
+.otz .header-icon-btn {
+    background: transparent;
+    border: none;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition:
+        background 0.3s ease,
+        transform 0.2s ease;
+}
+
+
+
+.otz .header-icon-btn:active::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 15px;
+    animation: pulse 0.4s;
+}
+
+
+.otz h2 {
+    color: #ffffff;
+    padding-bottom: 10px;
+    text-align: center;
+    margin: 40px;
+    position: relative;
+    font-family: 'benzin-bold', sans-serif;
+    font-size: 56px;
+}
+
+.otz .header-icons {
+    position: absolute;
+    top: 50px;
+    right: 165px;
+    display: flex;
+    gap: 10px;
+}
+
+.otz .header-icons img {
+    width: 26px;
+    height: 26px;
+}
+
+.otz .reviews-container {
+    display: grid;
+    grid-template-columns: repeat(4, 312px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.otz .review {
+    width: 312px;
+    height: 427px;
+    padding: 15px;
+    border-radius: 55px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.otz .review:nth-child(2),
+.otz .review:nth-child(4) {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 40px 15px 15px;
+}
+
+.otz .review:nth-child(2) .review-text,
+.otz .review:nth-child(4) .review-text {
+    font-family: 'gilroy-light',sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 30px;
+    position: relative;
+    top: 20px;
+}
+
+.otz .review:nth-child(2) .avatar,
+.otz .review:nth-child(4) .avatar {
+    left: 30px;
+    top: 21px;
+}
+
+.otz .review:nth-child(2) .user-name,
+.otz .review:nth-child(4) .user-name {
+    color: #3805F2;
+    font-weight: bold;
+    margin: 0 0 5px 120px;
+}
+
+.otz .review:nth-child(2) .user-role,
+.otz .review:nth-child(4) .user-role {
+    color: #000000;
+    margin: 0 0 15px 120px;
+}
+
+.otz .decor-lines {
+    position: absolute;
+    top: 15px;
+    left: 35px;
+    right: 15px;
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+.otz .line {
+    width: 20px;
+    height: 1px;
+    background: white;
+}
+
+.otz .avatar {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    position: absolute;
+    top: 45px;
+    left: 45px;
+    object-fit: cover;
+}
+
+.otz .review:nth-child(1) .avatar,
+.otz .review:nth-child(3) .avatar {
+    width: 52px;
+    height: 52px;
+    top: 30px;
+    left: 30px;
+}
+
+.otz .review:nth-child(1),
+.otz .review:nth-child(3) {
+    background:
+        linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+        url('images/card-bg-1.png') center/cover no-repeat;
+    color: white;
+    padding-top: 100px;
+}
+
+.otz .review:nth-child(3) {
+    background-image: url('images/card-bg-2.png');
+}
+
+.otz .badge-1 {
+    width: 150px;
+    height: 28px;
+    background: #3805F2;
+    border-radius: 14px;
+    transform: rotate(-2.79deg);
+    position: absolute;
+    top: 350px;
+    left: 132px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.otz .badge-1 span {
+    font-family: 'benzin-bold', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.otz .badge-stellarium {
+    font-family: 'benzin-bold', sans-serif;
+    font-size: 16px;
+    width: 112px;
+    height: 22px;
+    background: white;
+    border-radius: 14px;
+    transform: rotate(-10.89deg);
+    position: absolute;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.otz .badge-stellarium span {
+    color: #3805F2;
+    font-weight: bold;
+}
+
+.otz .badge-caption {
+    width: 258px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 14px;
+    transform: rotate(-10.89deg);
+    position: absolute;
+    top: 360px;
+    left: 87px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    line-height: 1.2;
+    padding: 5px;
+    text-align: center;
+}
+
+.otz .badge-caption span {
+    font-family: 'benzin-bold',sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.otz .icon-large {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 2;
+}
+
+.otz .icon-small {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    z-index: 3;
+}
+
+.otz .icon-large-card3 {
+    top: 310px;
+    left: 83px;
+    transform: rotate(-10.31deg);
+    width: 51px;
+    height: 51px;
+}
+
+.otz .icon-small-card3 {
+    top: 328px;
+    left: 245px;
+    transform: rotate(10deg);
+}
+.otz .user-name {
+    margin: 0 0 5px 105px;
+}
+.otz .user-role {
+    margin: 0 0 15px 105px;
+    color: #ecf0f1;
+}
+.otz .review-text {
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 15px;
 }
