@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'benzin-bold';
+    src: url('shrifts/benzin-bold.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gilroy-light';
+    src: url('shrifts/Gilroy-Light.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gilroy-bold';
+    src: url('shrifts/Gilroy-ExtraBold.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+h3{
+    font-family: 'benzin-bold', sans-serif;
+    font-size: 20px;
+}
+body {
+    font-family: 'gilroy-light', sans-serif;
+    background-color: black;
+}
+
+/* Шапка */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    background-color: #000;
+    color: white;
+    width: 1340px;
+    margin: 0 auto;
+}
+
+.contacts .buy-header-btn {
+    background: #3805F2;
+    color: #000000;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 40px;
+    font-family: 'benzin-bold', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.contacts .buy-header-btn:active {
+    outline: 1px solid white;
+}
+
+.logo img {
+    height: 37px;
+}
+.logo:hover{
+    cursor: pointer;
+
+}
+ul{
+    list-style-type: none;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-family: "gilroy-light", sans-serif;
+    font-size: 16px;
+}
+
+.menu ul li a:hover {
+    background-color: #555;
+}
+
+.contacts ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    align-items: center;
+}
+
+
+.contacts ul li img {
+    height: 30px;
+    cursor: pointer;
+}
+
+.contacts ul li strong {
+    font-family: "gilroy-light", sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+.contacts ul li:last-child img {
+    width: 160px;
+    height: auto;
+}
