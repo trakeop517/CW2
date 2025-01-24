@@ -156,7 +156,7 @@ ul{
     background-color: #3805F2;
     color: #fff;
     width: 280px;
-    height: 68px auto;
+    height: 68px;
     border: none;
     padding: 20px;
     border-radius: 50px;
@@ -170,8 +170,8 @@ ul{
 
 .banner .pod:hover {
     background-color: white;
-    color: #000000
-    box-shadow: 0 0 25px #a855f7
+    color: #000000;
+    box-shadow: 0 0 25px #a855f7;
     border: 1px solid #3805F2;
     color: #3805F2;
 }
