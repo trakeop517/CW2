@@ -32,7 +32,6 @@ body {
     background-color: black;
 }
 
-/* Шапка */
 .navbar {
     display: flex;
     align-items: center;
@@ -58,14 +57,15 @@ body {
 .contacts .buy-header-btn:active {
     outline: 1px solid white;
 }
-
 .logo img {
     height: 37px;
 }
+
 .logo:hover{
     cursor: pointer;
 
 }
+
 ul{
     list-style-type: none;
 }
@@ -97,7 +97,6 @@ ul{
     align-items: center;
 }
 
-
 .contacts ul li img {
     height: 30px;
     cursor: pointer;
@@ -114,7 +113,6 @@ ul{
     height: auto;
 }
 
-/* 1 раздел */
 .banner {
     width: 1340px;
     height: 992px;
@@ -309,7 +307,6 @@ ul{
     color: #fff;
 }
 
-/* Раздел 2 */
 .events{
     margin-top: 150px;
 }
@@ -406,7 +403,6 @@ h2{
 .events .event-card:hover .event-image{
     transform: scale(1.05)
 }
-
 
 .events .image-wrapper {
     position: relative;
@@ -549,7 +545,6 @@ h2{
     color: #ffffff
 }
 
-
 .events .show-more {
     text-align: center;
     margin-top: 40px;
@@ -575,7 +570,6 @@ h2{
     color: #ffffff;
 }
 
-/* блок 3 */
 .promo .zv {
     width: 60px;
     height: 60px;
@@ -613,6 +607,7 @@ h2{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
 }
+
 .promo .promo-card img {
     width: 100%;
     display: block;
@@ -669,13 +664,16 @@ h2{
     width: 18.5px;
     height: 20px;
 }
+
 .promo .promo-card:hover {
     cursor: pointer;
 }
+
 .promo .promo-card:hover .promo-content {
     background-color: white;
     color: black;
 }
+
 .promo .promo-card:hover .promo-btn {
     transform: rotate(-90deg);
     background-color: #3805F2;
@@ -687,8 +685,8 @@ h2{
     width: 117px;
     height: auto;
     z-index: 5;
+}
 
-/* блок 4 */
 .otz{
     margin-top: 150px;
 }
@@ -713,8 +711,6 @@ h2{
         background 0.3s ease,
         transform 0.2s ease;
 }
-
-
 
 .otz .header-icon-btn:active::after {
     content: '';
@@ -947,20 +943,22 @@ h2{
     left: 245px;
     transform: rotate(10deg);
 }
+
 .otz .user-name {
     margin: 0 0 5px 105px;
 }
+
 .otz .user-role {
     margin: 0 0 15px 105px;
     color: #ecf0f1;
 }
+
 .otz .review-text {
     line-height: 1.6;
     margin: 0;
     padding: 0 15px;
 }
 
-/* Раздел 5 */
 .FAQ {
     font-family: 'gilroy-light', sans-serif;
     padding-top: 130px;
@@ -1088,4 +1086,333 @@ h2{
 
 .FAQ .faq-question:hover .icon::before {
     content: "-";
+}
+
+.reg{
+    margin-top: 150px;
+}
+.reg * {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.reg body {
+    background: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reg .main-title {
+    text-align: center;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.reg h2 {
+    color: white;
+    font-family: 'benzin-bold';
+    font-size: 56px;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.reg .container {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 4rem;
+    max-width: 1340px;
+    height: auto;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.reg .form-content {
+    padding: 0 16px;
+    width: 540px;
+    height: 413px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.reg .intro-text {
+    font-family: 'gilroy-light',sans-serif;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 32px;
+    text-align: start;
+    width: 100%;
+}
+
+.reg .form-group {
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.reg input {
+    width: 540px;
+    height: 62px;
+    padding: 19px;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 40px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.reg input::placeholder {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.reg input:focus {
+    outline: none;
+    border-color: #fff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.reg button {
+    font-family: 'benzin-bold',sans-serif;
+    font-size: 16px;
+    width: 540px;
+    height: 56px;
+    padding: 19px;
+    background: #3805F2;
+    border: none;
+    border-radius: 40px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.reg button:hover {
+    background: #ffffff;
+    color: #000000;
+}
+
+.reg input {
+    transition:
+        background-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.reg input:hover {
+    background-color: #3805F2 !important;
+    color: white !important;
+}
+
+.reg input:focus {
+    background-color: #8A2BE2 !important;
+    color: white !important;
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.4);
+}
+
+.reg .privacy-text {
+    font-family: 'gilroy-light', sans-serif;
+    color: #ffffff;
+    font-size: 12px;
+    margin-top: 20px;
+    white-space: nowrap;
+}
+
+.reg .image-section img {
+    width: 700px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 55px;
+    filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.1));
+}
+
+.kak {
+    margin-top: 150px ;
+    max-width: 1340px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+}
+
+.kak * {
+    box-sizing: border-box;
+}
+.kak p {
+    font-family: 'gilroy-light',sans-serif;
+    color: #ffffff;
+    font-size: 12px;
+}
+.kak body {
+    line-height: 1.6;
+    padding: 20px;
+    width: 1340px;
+    height: 763px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.kak h1 {
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.kak h2 {
+    color: #ffffff;
+    margin: 40px 0 20px;
+    padding-bottom: 10px;
+    font-family: 'benzin-bold';
+    font-size: 56px;
+    text-align: center;
+}
+
+.kak .map-image {
+    width: 1340px;
+    height: 427px;
+    object-fit: cover;
+    border-radius: 80px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    margin-bottom: 2px;
+}
+
+.kak .contact-row {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 20px;
+    margin: 30px 0;
+    width: 100%;
+}
+
+.kak .address-block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-self: start;
+}
+.kak .address p {
+    font-family: 'gilroy-light', sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+}
+.kak .address-icon {
+    object-fit: contain;
+}
+
+.kak .center-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-left: 15%;
+}
+.kak .center-icons:hover {
+    border-color: #FFFFFF;
+
+}
+
+.kak .right-block {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    justify-self: end;
+}
+
+.kak .social-icon {
+    gap: 15px;
+}
+
+.kak .phone {
+    font-family: 'gilroy-light', sans-serif;
+    white-space: nowrap;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.footer-grid-wrapper {
+    display: grid;
+    grid-template-columns: auto 888px;
+    align-items: center;
+    gap: 273px;
+    max-width: 1340px;
+    margin: 0 auto;
+}
+
+.privacy-policy {
+    justify-self: start;
+    white-space: nowrap;
+}
+
+.kak .newsletter-section {
+    width: 888px;
+    height: 120px;
+    background: #ffffff;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 45px;
+    box-sizing: border-box;
+    gap: 10px;
+}
+
+.kak .newsletter-title {
+    font-family: 'benzin-bold';
+    font-size: 20px;
+    color: #3805F2 ;
+    width: 180px;
+    flex-shrink: 0;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.kak .newsletter-form {
+    flex: 1;
+    min-width: 0;
+    margin: 0 10px;
+}
+
+.kak .newsletter-input {
+    width: 312px;
+    padding: 12px;
+    border: 1px solid gray;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+.kak .newsletter-input:hover {
+    background-color: #3805F2 ;
+
+}
+
+.kak .newsletter-button {
+    font-family: 'benzin-bold',sans-serif;
+    font-size: 16px;
+    width: 235px;
+    flex-shrink: 0;
+    padding: 12px 30px;
+    background: #3805F2;
+    color: white;
+    border-color: #FFFFFF;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+.kak .newsletter-button:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+    border-color: #3805F2;
+}
+
+.kak .subtract-image {
+    position: absolute;
+    top: 240px;
+    left: 405px;
+    z-index: 2;
+}
+
+.kak .subtract-image img {
+    width: auto;
+    height: auto;
 }
